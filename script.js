@@ -20,7 +20,7 @@ async function checkWeather(city) {
   const condition = data.weather[0].main;
 
   if (condition == "Clouds") {
-    weatherIcon.src = "./images/OIP.jpg";
+    weatherIcon.src = "./images/th.jpg";
   } else if (condition == "Rain") {
     weatherIcon.src = "./images/OIP-4.jpg";
   } else if (condition == "Clear") {
