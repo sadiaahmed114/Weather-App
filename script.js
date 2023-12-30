@@ -19,17 +19,6 @@ async function checkWeather(city) {
 
   const condition = data.weather[0].main;
 
-  if (condition == "Clouds") {
-    weatherIcon.src = "./images/th.jpg";
-  } else if (condition == "Rain") {
-    weatherIcon.src = "./images/OIP-4.jpg";
-  } else if (condition == "Clear") {
-    weatherIcon.src = "./images/OIP.jpg";
-  } else if (condition == "Mist") {
-    weatherIcon.src = "./images/OIP-8.jpg";
-  } else if (condition == "drizzle") {
-    weatherIcon.src = "./images/download.jpg";
-  }
   document.querySelector(".weather").style.display = "block";
 }
 
